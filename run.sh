@@ -21,4 +21,5 @@ Name = $DB_Name
 Charset = $DB_Charset
 TablePrefix = $DB_TablePrefix
 EOF
+/root/aria2/trackers-list-aria2.sh
 (redis-server &) && (./cloudreve -c ./conf.ini)
