@@ -1,25 +1,22 @@
 #!/bin/sh
 cat <<-EOF > /root/cloudreve/conf.ini
 [System]
-; 运行模式
 Mode = master
-; 监听端口
 Listen = :${PORT}
-; 是否开启 Debug
-Debug = false
 [Redis]
-Server = 127.0.0.1:6379
-Password =
+Server = ${REDIS_URL##*@}
+Password = ${REDIS_URL:9:65}
 DB = 0
 [Database]
-Type = $DB_Type
-Host = $DB_Host
-Port = $DB_Port
-User = $DB_User
-Password = $DB_Password
-Name = $DB_Name
-Charset = $DB_Charset
-TablePrefix = $DB_TablePrefix
+Type = mysql
+Host = ${JAWSDB_URL:42:57}
+Port = ${JAWSDB_URL:100:4}
+User = ${JAWSDB_URL:8:16}
+Password = ${JAWSDB_URL:25:16}
+Name = ${JAWSDB_URL##*/}
+Charset = utf8
+TablePrefix = cd
 EOF
+
 /root/aria2/trackers-list-aria2.sh
-(redis-server &) && (./cloudreve -c ./conf.ini)
+./cloudreve -c ./conf.ini
