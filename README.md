@@ -1,6 +1,6 @@
-### Heroku Redis + Jawsdb Mysql
+# Heroku Redis + Aria2 + Jawsdb Mysql
 
-Heroku Redis + Jawsdb Mysql版本(需要已验证的Heroku账户)
+Heroku Redis + Aria2 + Jawsdb Mysql版本(需要已验证的Heroku账户)
 
 ---
 
@@ -8,7 +8,17 @@ Heroku Redis + Jawsdb Mysql版本(需要已验证的Heroku账户)
 
 ---
 
-#### 关于
+## Aria2默认信息
+
+Aria2地址：http://127.0.0.1:6800 或 ws://127.0.0.1:6800
+
+Aria2默认下载地址：/root/Downloads
+
+Aria2秘钥：xiaow
+
+PS：在Aria2.conf配置文件中可修改默认信息
+
+### 关于镜像版本及Cloudreve版本的说明
 
 使用alpine:latest镜像制作，默认开启Redis缓存服务
 
