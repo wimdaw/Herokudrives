@@ -26,7 +26,7 @@ RUN mkdir -p /root/Downloads
 RUN  wget -qO /root/aria2/dht.dat https://github.com/P3TERX/aria2.conf/raw/master/dht.dat
 
 # Download DHT6 profile
-wget -qO /root/aria2/dht6.dat https://github.com/P3TERX/aria2.conf/raw/master/dht6.dat
+RUN wget -qO /root/aria2/dht6.dat https://github.com/P3TERX/aria2.conf/raw/master/dht6.dat
 
 # Create aria2 log file
 RUN touch /root/aria2/aria2.session /root/aria2/aria2.log
