@@ -19,4 +19,4 @@ TablePrefix = cd
 EOF
 
 /root/aria2/trackers-list-aria2.sh
-./cloudreve -c ./conf.ini
+/root/cloudreve/cloudreve -c /root/cloudreve/conf.ini
