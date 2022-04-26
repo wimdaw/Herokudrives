@@ -8,9 +8,9 @@ Cloudreve with redis的Docker版本
 
 ---
 
-查看Heroku Redis + Heroku Postgres版：https://github.com/useblue/Cloudreve-Heroku/tree/Cloudreve-Heroku
+查看Heroku Redis + Heroku Postgres版：https://github.com/wimdaw/drives/tree/Cloudreve-Heroku
 
-查看Heroku Redis + Jawsdb Mysql版：https://github.com/useblue/Cloudreve-Heroku/tree/Heroku-mysql
+查看Heroku Redis + Jawsdb Mysql版：https://github.com/wimdaw/drives/tree/Heroku-mysql
 
 #### 关于
 
