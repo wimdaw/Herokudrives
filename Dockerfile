@@ -25,7 +25,7 @@ COPY ./trackers-list-aria2.sh /root/aria2/trackers-list-aria2.sh
 RUN mkdir -p /root/Downloads
 
 # Download DHT profile
-RUN  wget -qO /root/aria2/dht.dat https://github.com/P3TERX/aria2.conf/raw/master/dht.dat
+RUN wget -qO /root/aria2/dht.dat https://github.com/P3TERX/aria2.conf/raw/master/dht.dat
 
 # Download DHT6 profile
 RUN wget -qO /root/aria2/dht6.dat https://github.com/P3TERX/aria2.conf/raw/master/dht6.dat
