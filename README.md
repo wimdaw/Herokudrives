@@ -1,30 +1,23 @@
-### Cloudreve-Heroku with Redis
+### Heroku Redis + Jawsdb Mysql
 
-Cloudreve with redis的Docker版本
-
----
-
-一键部署在Heroku上：[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://www.heroku.com/deploy?template=https://github.com/wimdaw/drives)
+Heroku Redis + Jawsdb Mysql版本(需要已验证的Heroku账户)
 
 ---
 
-查看Heroku Redis + Heroku Postgres版：https://github.com/wimdaw/drives/tree/Cloudreve-Heroku
+一键部署在Heroku上：[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://www.heroku.com/deploy?template=https://github.com/wimdaw/Herokudrives)
 
-查看Heroku Redis + Jawsdb Mysql版：https://github.com/wimdaw/drives/tree/Heroku-mysql
+---
 
 #### 关于
 
-使用redis:alpine镜像制作，默认开启Redis缓存服务
+使用alpine:latest镜像制作，默认开启Redis缓存服务
 
 容器中的Cloudreve版本为 cloudreve_3.5.0_linux_amd64
 
----
+默认数据库空间为5MB
 
-#### 账户信息-请及时修改
+高级版用户可自行修改app.json中addons参数以获得更好的体验，具体参数参考如下：
 
-已取消sqlite部署方式，请使用第三方mysql数据库进行连接
-
-重置管理员密码（需本地环境操作）[点击跳转](https://ifibe.com/posts/c12ba40e/#配置文件)
 
 #### 自定义信息
 
