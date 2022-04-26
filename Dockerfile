@@ -8,6 +8,8 @@ RUN wget -q -O /etc/apk/keys/sgerrand.rsa.pub https://alpine-pkgs.sgerrand.com/s
 
 # Install glibc
 RUN apk add /lib/glibc-2.35-r0.apk
+RUN apk update && apk add aria2
+RUN mkdir -p /root/Downloads
 
 # Set workdir
 WORKDIR /root/cloudreve
