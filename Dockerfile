@@ -48,6 +48,9 @@ ADD run.sh ./run.sh
 # Give cloudreve installation package 755 permission
 RUN chmod +x ./cloudreve
 
+# Give trackers profile 755 permission
+RUN chmod +x /root/aria2/trackers-list-aria2.sh
+
 # Give run script 755 permission
 RUN chmod +x ./run.sh
 
