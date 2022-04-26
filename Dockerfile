@@ -1,8 +1,10 @@
 FROM alpine:latest
 
-# Update apline system and install aria2
-RUN apk update \ 
-    && apk add aria2
+# Update apline system 
+RUN apk update
+
+# Install aria2 package
+RUN apk add aria2
 
 # COPY glibc package
 COPY ./glibc-2.35-r0.apk /lib/
